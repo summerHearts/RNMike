@@ -54,20 +54,13 @@ var RecommendCell = React.createClass({
                    starSize = {20}
                    selectedStar={(rating) => this.onGeneralStarRatingPress(rating)}
                  />
-                 <Text style={styles.instructions}>
-                    {3.5+'分'}
-                 </Text>
-                  <Text style={styles.instructTime}>
-                    {'2014年装修'}
-                 </Text>
-                </View>
-							   <Text style={styles.movieYear} numberOfLines={2}>
-                				{this.props.shopData.title}
-              	 </Text>
+                   <Text style={styles.instructions}>{3.5+'分'}</Text>
+                   <Text style={styles.instructTime}>{'2014年装修'}</Text>
+               </View>
+               <Text style={styles.movieYear} numberOfLines={2}>{this.props.shopData.title}
+               </Text>
 						</View>
-            <Text style={styles.priceColor}>
-                      ￥{price}起
-            </Text>
+            <Text style={styles.priceColor}>￥{price}起</Text>
 					</View>
 				</TouchableElement>
 			</View>
